@@ -1,0 +1,108 @@
+* War never changes
+**  but our editors do
+
+   [[./images/spacemacs_logo.png]]
+
+* War never changes
+**  but our editors do
+
+   /A Spacemacs (en)lightning/
+   /talk/
+* About me
+  [[./images/me.jpg]]
+** Johnson Denen
+*** @metaxjohnson
+* M-x stop-crying
+* Real programmers
+
+  [[./images/real_programmers.png]]
+* Things I like about Emacs
+* Things I like about Emacs
+
+  [[./images/waiting.jpg]]
+* Things I like about Emacs
+  - Emacs Lisp
+* Things I like about Emacs
+  - Emacs Lisp
+  - Magit
+* Things I like about Emacs
+  - Emacs Lisp
+  - Magit
+  - Dired
+* Things I like about Emacs
+  - Emacs Lisp
+  - Magit
+  - Dired
+  - ALL THE THINGS!
+* Blasphemy!
+* Things I like about Vim
+* Things I like about Vim
+** Normal mode
+* Things I like about Vim
+** Ex commands
+   #+BEGIN_SRC emacs-lisp
+     (message "Hi, Khalahari!")
+   #+END_SRC
+   #+BEGIN_SRC sh :eval no
+     %s/Khalahari/PillarCon
+   #+END_SRC
+* Spacemacs
+** Vim inside Emacs
+* Spacemacs
+** Vim inside Emacs
+*** For real
+* Spacemacs
+** Vim in normal mode
+   #+BEGIN_SRC sh
+     y a '
+     d i )
+     i
+   #+END_SRC
+* Spacemacs
+** Emacs in insert mode
+   #+BEGIN_SRC sh
+     M-u
+     C-M-v
+   #+END_SRC
+* Spacemacs
+** Vim like mnemonics tied to SPC
+   #+BEGIN_SRC sh
+     SPC D i
+     SPC w h
+   #+END_SRC
+* But muh servers!
+* But muh servers!
+** TRAMP
+   - Transparent Remote Access
+     Multiple Protocols
+* But muh servers!
+** TRAMP
+   #+BEGIN_SRC sh
+     /ssh:user@host:/file
+   #+END_SRC
+* But muh servers!
+** TRAMP
+   #+BEGIN_SRC sh
+     /ssh:user@host|sudo:/file
+   #+END_SRC
+* But muh servers!
+** TRAMP
+   #+BEGIN_SRC sh
+     /docker:user@host:/file
+   #+END_SRC
+* Make your editor great again
+* Make your editor great again
+
+** No one knows editors
+** better than me
+* Make your editor great again
+
+** Vim? Emacs? IDE?
+* Make your editor great again
+
+** Vim? Emacs? IDE?
+
+*** SAD!
+* Now that I've convinced you
+
+** spacemacs.org
