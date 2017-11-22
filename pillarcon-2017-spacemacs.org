@@ -10,7 +10,7 @@
    /talk/
 * About me
   [[./images/me.jpg]]
-** Johnson Denen
+** Johnson
 *** @metaxjohnson
 * M-x stop-crying
 * Real programmers
@@ -37,15 +37,14 @@
 * Blasphemy!
 * Things I like about Vim
 * Things I like about Vim
-** Normal mode
+  - Normal mode
 * Things I like about Vim
-** Ex commands
-   #+BEGIN_SRC emacs-lisp
-     (message "Hi, Khalahari!")
-   #+END_SRC
-   #+BEGIN_SRC sh :eval no
-     %s/Khalahari/PillarCon
-   #+END_SRC
+  - Normal mode
+  - Ex commands
+  #+BEGIN_SRC sh
+    :%s/^/PillarCon/g
+    :(message "Hello!")
+  #+END_SRC
 * Spacemacs
 ** Vim inside Emacs
 * Spacemacs
