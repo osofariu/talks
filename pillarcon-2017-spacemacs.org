@@ -93,10 +93,6 @@
 * Make your editor great again
 * Make your editor great again
 
-** No one knows editors
-** better than me
-* Make your editor great again
-
 ** Vim? Emacs? IDE?
 * Make your editor great again
 
