@@ -1,26 +1,62 @@
 #+REVEAL_ROOT: http://cdn.jsdelivr.net/reveal.js/3.0.0/
 #+REVEAL_HLEVEL: 2
+#+REVEAL_PLUGINS: notes
 #+OPTIONS: reveal_title_slide:nil reveal_slide_number:nil num:nil
 
-* What is CI?
+* What is CI
+  #+BEGIN_NOTES
+  Introduce yourself. Point:
+  - Introduce CI
+  - Benefits
+  - ascena's CI
+  #+END_NOTES
 ** Definition
    Continuous integration is the development practice of merging code and validating it as often as possible.
    Each check-in is built and tested automatically.
+   #+BEGIN_NOTES
+   My definition. Key pieces are:
+   - Continuous
+   - Integrated
+   - Automated
+   #+END_NOTES
 ** Integration
 *** Merge to a shared branch
+    #+BEGIN_NOTES
+    Like a sprint branch
+    #+END_NOTES
 *** Pull request
+    #+BEGIN_NOTES
+    Because why wait for a merge?
+    #+END_NOTES
 ** Continuous
 *** Push to a feature branch
-*** Pushing often
-*** Merging often
+    #+BEGIN_NOTES
+    Every push validates changes!
+    #+END_NOTES
+*** Push often
+*** Merge often
 ** Automatic
 *** No requests 
+    #+BEGIN_NOTES
+    Jenkins has historically been used as a task runner
+    #+END_NOTES
 ** CI Benefits
 *** Fast feedback
+    #+BEGIN_NOTES
+    Seems trivial but:
+    - reduce risk
+    - all kinds of feedback possible
+    #+END_NOTES
 *** No manual intervention
 ** Caveats
 *** Dev process
+    #+BEGIN_NOTES
+    Have to push more often
+    #+END_NOTES
 *** Intake process 
+    #+BEGIN_NOTES
+    Have to merge more often
+    #+END_NOTES
 ** ascena CI
 *** Configured with code
 *** Checked into source control
