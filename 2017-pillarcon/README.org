@@ -4,23 +4,28 @@
 
    [[./images/real_programmers.png]]
 
-   There's no wrong answer to the question of how you get your work done. Some answers are better than others,
-   and Emacs is obviously the best answer. But there are no /wrong/ answers.
+   There's no wrong answer to the question of how you get your work done. Some answers are better than others.
+   Emacs is obviously the best answer, and Spacemacs makes Emacs even that much better.
+
+   But there are no /wrong/ answers.
 ** Things I like about Emacs
 *** Emacs Lisp
     VimL/VimScript is an abomination against nature. Emacs Lisp is the best configuration-as-code option out there.
-    Plus, it's Lisp, which is awesome.
+    Plus, it's Lisp, which is fun and awesome.
 *** Magit
-    No editor does a better Git integration than Emacs. And that's thanks to Magit. If you install Spacemacs, make
-    sure you install the git layer. Use =SPC g s= in a project to start.
+    No editor does a better Git integration than Emacs thanks to Magit. Seriously, check it out.
 *** Dired
-    The command line is inefficient. Dired lets you treat directories as buffers and perform operations on file,
-    subdirectories, etc. Jump to a directory with =SPC f j=.
+    The command line is inefficient, and I want to use it as little as possible. There's simply way too much typing
+    to accomplish relatively easy tasks.
+
+    Dired lets you treat directories as buffers. You can perform operations on file, subdirectories, etc.
+
+    Jump to your current working directory with =SPC f j=.
 *** ALL THE THINGS!
     There are way too many great things about Emacs to list.
 ** Things I like about Vim
 *** Normal mode
-    If Vim only does one thing right, it's modal editing. Seriously, there's nothing quite as powerful as normal
+    If Vim only does one thing right, it's modal editing. There's nothing quite as powerful as normal
     mode when it comes to editing text.
 *** Ex commands
     For quick, simple edits made throughout an entire file, Vim's ex commands are handy. Like adding text to the
@@ -32,10 +37,12 @@
 
     =:(message "Hello!")=
 ** Spacemacs
-   It's the best of both worlds. Vim inside Emacs, for real. This is *NOT* like Vim emulation in Visual Studio
-   or some other affront to all sensibility.
+   Spacemacs is a configuration package for Emacs. Easy to install and extend, and it makes my day-to-day work
+   so much more enjoyable. It's the best of both worlds. Vim inside Emacs, for real.
+
+   This is *NOT* like Vim emulation in Visual Studio or some other affront to all sensibility.
 *** Vim in normal mode
-    Spacemacs gives us modal editing in Emacs! You get all the mnemonic shortcuts Vim users are used to.
+    Modal editing in Emacs! And you get all the mnemonic shortcuts Vim users are used to.
 
     Copy everything inside a single quotation marks (inclusive) with =y a '=.
 
@@ -53,9 +60,9 @@
     For example, I can =SPC D i= to view all my Docker images. Or I can =SPC f f= to find a file.
 ** But muh servers!
    As someone whose focus is within the realm of DevOps, access to remote servers is the most common argument
-   against Emacs that I encounter. Vi is everywhere. It's a simple SSH away.
+   against Emacs that I encounter. Vi is everywhere and that makes it preferable to many.
 
-   I say if you're SSH'ing into a machine to run an editor, you're doing it wrong.
+   But I say if you're SSH'ing into a machine to run an editor, you're doing it wrong.
 *** TRAMP
     TRAMP stands for *Transparent Remote Access Multiple Protocols* and it comes with Emacs by default. It lets
     you open remote filepaths from your local Emacs and edit them there.
