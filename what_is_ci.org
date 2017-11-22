@@ -1,0 +1,27 @@
+#+REVEAL_ROOT: http://cdn.jsdelivr.net/reveal.js/3.0.0/
+#+REVEAL_HLEVEL: 2
+#+OPTIONS: reveal_title_slide:nil reveal_slide_number:nil num:nil
+
+* What is CI?
+** Definition
+   Continuous integration is the development practice of merging code and validating it as often as possible.
+   Each check-in is built and tested automatically.
+** Integration
+*** Merge to a shared branch
+*** Pull request
+** Continuous
+*** Push to a feature branch
+*** Pushing often
+*** Merging often
+** Automatic
+*** No requests 
+** CI Benefits
+*** Fast feedback
+*** No manual intervention
+** Caveats
+*** Dev process
+*** Intake process 
+** ascena CI
+*** Configured with code
+*** Checked into source control
+*** Continuous delivery
