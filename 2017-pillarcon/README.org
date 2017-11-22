@@ -1,77 +1,79 @@
 * War never changes but our editors do
   /A Spacemacs (en)lightning talk/
-* Real programmers
+** Real programmers
 
-  [[./images/real_programmers.png]]
+   [[./images/real_programmers.png]]
 
-  There's no wrong answer to the question of how you get your work done. Some answers are better than others,
-  and Emacs is obviously the best answer. But there are no /wrong/ answers.
-* Things I like about Emacs
-** Emacs Lisp
-   VimL/VimScript is an abomination against nature. Emacs Lisp is the best configuration-as-code option out there.
-   Plus, it's Lisp, which is awesome.
-** Magit
-   No editor does a better Git integration than Emacs. And that's thanks to Magit. If you install Spacemacs, make
-   sure you install the git layer. Use =SPC g s= in a project to start.
-** Dired
-   The command line is inefficient. Dired lets you treat directories as buffers and perform operations on file,
-   subdirectories, etc. Jump to a directory with =SPC f j=.
-** ALL THE THINGS!
-   There are way too many great things about Emacs to list.
-* Things I like about Vim
-** Normal mode
-   If Vim only does one thing right, it's modal editing. Seriously, there's nothing quite as powerful as normal
-   mode when it comes to editing text.
-** Ex commands
-   For quick, simple edits made throughout an entire file, Vim's ex commands are handy. Like adding text to the
-   beginning of every line:
+   There's no wrong answer to the question of how you get your work done. Some answers are better than others,
+   and Emacs is obviously the best answer. But there are no /wrong/ answers.
+** Things I like about Emacs
+*** Emacs Lisp
+    VimL/VimScript is an abomination against nature. Emacs Lisp is the best configuration-as-code option out there.
+    Plus, it's Lisp, which is awesome.
+*** Magit
+    No editor does a better Git integration than Emacs. And that's thanks to Magit. If you install Spacemacs, make
+    sure you install the git layer. Use =SPC g s= in a project to start.
+*** Dired
+    The command line is inefficient. Dired lets you treat directories as buffers and perform operations on file,
+    subdirectories, etc. Jump to a directory with =SPC f j=.
+*** ALL THE THINGS!
+    There are way too many great things about Emacs to list.
+** Things I like about Vim
+*** Normal mode
+    If Vim only does one thing right, it's modal editing. Seriously, there's nothing quite as powerful as normal
+    mode when it comes to editing text.
+*** Ex commands
+    For quick, simple edits made throughout an entire file, Vim's ex commands are handy. Like adding text to the
+    beginning of every line:
 
-   =:%s/^/Hello/g=
+    =:%s/^/Hello/g=
 
-   Ex commands in Spacemacs are great because you can run anonymous Lisp functions in them:
+    Ex commands in Spacemacs are great because you can run anonymous Lisp functions in them:
 
-   =:(message "Hello!")=
-* Spacemacs
-  It's the best of both worlds. Vim inside Emacs, for real. This is *NOT* like Vim emulation in Visual Studio
-  or some other affront to all sensibility.
-** Vim in normal mode
-   Spacemacs gives us modal editing in Emacs! You get all the mnemonic shortcuts Vim users are used to.
+    =:(message "Hello!")=
+** Spacemacs
+   It's the best of both worlds. Vim inside Emacs, for real. This is *NOT* like Vim emulation in Visual Studio
+   or some other affront to all sensibility.
+*** Vim in normal mode
+    Spacemacs gives us modal editing in Emacs! You get all the mnemonic shortcuts Vim users are used to.
 
-   Copy everything inside a single quotation marks (inclusive) with =y a '=.
+    Copy everything inside a single quotation marks (inclusive) with =y a '=.
 
-   Delete everything inside parentheses (exclusive) with =d i )=. This is super useful for writing Lisp.
+    Delete everything inside parentheses (exclusive) with =d i )=. This is super useful for writing Lisp.
 
-   Jump to insert mode with =i=. And a whole lot more!
-** Emacs in insert mode
-   Spacemacs gives us Emacs keybindings in insert mode. I don't always want to jump out to normal mode to make a
-   single change. Using =M-d= to delete forward or =M-u= to upcase to word end is great. (=M-u= stands for =ALT u=).
-** Vim like mnemonics tied to SPC
-   Because Spacemacs is just Emacs under the hood, it has access to an endless number of functions and packages. Many
-   of these are accessible to Spacemacs users via the =SPC= bar. Commands use a Vim-like mnemonic to make keybindings
-   easier to remeber.
+    Jump to insert mode with =i=. And a whole lot more!
+*** Emacs in insert mode
+    Spacemacs gives us Emacs keybindings in insert mode. I don't always want to jump out to normal mode to make a
+    single change. Using =M-d= to delete forward or =M-u= to upcase to word end is great. (=M-u= stands for =ALT+u=).
+*** Vim like mnemonics tied to SPC
+    Because Spacemacs is just Emacs under the hood, it has access to an endless number of functions and packages. Many
+    of these are accessible to Spacemacs users via the =SPC= bar. Commands use a Vim-like mnemonic to make keybindings
+    easier to remeber.
 
-   For example, I can =SPC D i= to view all my Docker images. Or I can =SPC f f= to find a file.
-* But muh servers!
-  As someone whose focus is within the realm of DevOps, access to remote servers is the most common argument
-  against Emacs that I encounter. Vi is everywhere. It's a simple SSH away.
+    For example, I can =SPC D i= to view all my Docker images. Or I can =SPC f f= to find a file.
+** But muh servers!
+   As someone whose focus is within the realm of DevOps, access to remote servers is the most common argument
+   against Emacs that I encounter. Vi is everywhere. It's a simple SSH away.
 
-  I say if you're SSH'ing into a machine to run an editor, you're doing it wrong.
-** TRAMP
-   TRAMP stands for *Transparent Remote Access Multiple Protocols* and it comes with Emacs by default. It lets
-   you open remote filepaths from your local Emacs and edit them there.
+   I say if you're SSH'ing into a machine to run an editor, you're doing it wrong.
+*** TRAMP
+    TRAMP stands for *Transparent Remote Access Multiple Protocols* and it comes with Emacs by default. It lets
+    you open remote filepaths from your local Emacs and edit them there.
 
-   It's like the remote-edit plugin for Atom. Except it works. And is good.
+    It's like the remote-edit plugin for Atom. Except it works. And is good.
 
-   If I want to open a file on a server, I =SPC f f= and navigate to this path:
+    If I want to open a file on a server, I =SPC f f= and navigate to this path:
 
-   =/ssh:user@host:/file=
+    =/ssh:user@host:/file=
 
-   I can pipe into sudo for root access to the file too:
+    I can pipe into sudo for root access to the file too:
 
-   =/ssh:user@host|sudo:/file=
+    =/ssh:user@host|sudo:/file=
 
-   And it works for Docker containers:
+    And it works for Docker containers:
 
-   =/docker:user@container:/file=
-* Now that I've convinced you
-  Visit spacemacs.org to learn more!
+    =/docker:user@container:/file=
+
+    TRAMP will use your =~/.ssh/config= file or prompt you for a password.
+** Now that I've convinced you
+   Visit spacemacs.org to learn more!
