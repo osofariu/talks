@@ -1,15 +1,35 @@
 * talks
 Presentations and the code that supports them.
-** Write in org-mode
-   Use [[https://github.com/yjwen/org-reveal][org-reveal]] to develop a presentation.
-** Export HTML
-   Inside a presentation org file, use =C-c C-e R R= to export to HTML.
-** Build and run server
-   Use =docker-compose= to build the presentation image and spin up a container. The command 
-   requires a =presentation= environment variable set to the HTML file you want to serve.
+** Usage
+*** Write in org-mode
+    Use [[https://github.com/yjwen/org-reveal][org-reveal]] to develop a presentation.
+*** Export HTML
+    Inside a presentation org file, use =C-c C-e R R= to export to HTML.
+*** Build and run server
+    Use =docker-compose= to build the presentation image and spin up a container. The command 
+    requires a =presentation= environment variable set to the HTML file you want to serve.
    
-   #+BEGIN_SRC bash
-     presentation=what_is_ci.html docker-compose up -d --build
-   #+END_SRC
-** Talk
-   Visit =localhost:8000= to give the presentation. Use =s= to display the speaker notes page.
+    #+BEGIN_SRC bash
+      presentation=what_is_ci.html docker-compose up -d --build
+    #+END_SRC
+*** Talk
+    Visit =localhost:8000= to give the presentation. Use =s= to display the speaker notes page.
+** Helpers
+   This repo provides a few helper functions to spin up containerized presentations.
+*** Installation
+    Add the =lisp= directory to your =load-path=:
+    #+BEGIN_SRC emacs-lisp
+      (add-to-list 'load-path "/path/to/talks/lisp")
+    #+END_SRC
+    
+    You could also install with =use-package=:
+    #+BEGIN_SRC emacs-lisp
+      (use-package talk-helpers
+        :load-path "/path/to/talks/lisp")
+    #+END_SRC
+*** Usage
+    Open an org-reveal presentation file and execute one of these interactive functions:
+**** =talk-helpers/up=
+     Exports an entire presentation to HTML and executes =docker-compose= to spin up the presentation server.
+**** =talk-helpers/up-no-toc=
+     Exports a presentation from its first header. This doesn't generate a Table of Contents.
