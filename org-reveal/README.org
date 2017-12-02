@@ -33,3 +33,6 @@ Presentations and the code that supports them.
      Exports an entire presentation to HTML and executes =docker-compose= to spin up the presentation server.
 **** =talk-helpers/up-no-toc=
      Exports a presentation from its first header. This doesn't generate a Table of Contents.
+
+You can keep your org presentation outside the org-reveal directory. To do that, set
+=org-reveal-base-dir= to the path to the org-reveal directory.
